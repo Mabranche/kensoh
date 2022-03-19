@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
+use App\Http\Controllers\brandController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,21 +19,21 @@ Route::get('/', function () {
 })->name('homepage');
 
 Route::get('/backend', function () {
-	 
-	if (Auth::check()) {
-		return view('dashboard');
-	}
-	else
-		return view('backend/login');
+
+    if (Auth::check()) {
+        return view('dashboard');
+    } else
+        return view('backend/login');
 })->name('backend');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::resource('brand', brandController::class);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
