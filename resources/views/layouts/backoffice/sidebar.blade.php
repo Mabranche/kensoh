@@ -21,7 +21,7 @@
                             <li><a href="{{route('category.index')}}"><i class="fa fa-circle"></i>Catégories</a></li>
                             <li><a href="{{route('product.index')}}"><i class="fa fa-circle"></i>Liste Produits</a></li>
                             <li><a href="{{route('product.create')}}"><i class="fa fa-circle"></i>Ajouter</a></li>
-                         
+
                         </ul>
                     </li>
                     <li><a class="sidebar-header" href="{{route('store.index')}}"><i data-feather="codepen"></i><span>Boutiques</span></a>
@@ -41,7 +41,7 @@
                         </ul>
                     </li>
                     <li><a class="sidebar-header" href="media.html.htm"><i data-feather="camera"></i><span>Media</span></a></li>
-                    
+
                     <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Utilisateurs</span><i class="fa fa-angle-right pull-right"></i></a>
                         <ul class="sidebar-submenu">
                             <li><a href="user-list.html.htm"><i class="fa fa-circle"></i>Liste Utilisateurs</a></li>
@@ -54,7 +54,7 @@
                             <li><a href="create-vendors.html.htm"><i class="fa fa-circle"></i>Créer Vendeur</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a class="sidebar-header" href="reports.html.htm"><i data-feather="message-circle"></i><span>Evaluations</span></a></li>
                     <li><a class="sidebar-header" href=""><i data-feather="map-pin"></i><span>Localisation</span><i class="fa fa-angle-right pull-right"></i></a>
                         <ul class="sidebar-submenu">
@@ -66,8 +66,8 @@
                     <li><a class="sidebar-header" href="reports.html.htm"><i data-feather="phone"></i><span>Contact</span></a></li>
                     <li><a class="sidebar-header" href=""><i data-feather="hash"></i><span>FAQ</span><i class="fa fa-angle-right pull-right"></i></a>
                         <ul class="sidebar-submenu">
-                            <li><a href="currency-rates.html.htm"><i class="fa fa-circle"></i>Ajouter</a></li>
-                            <li><a href="taxes.html.htm"><i class="fa fa-circle"></i>Liste FAQ</a></li>
+                            <li><a href="{{route('faq.create')}}"><i class="fa fa-circle"></i>Ajouter</a></li>
+                            <li><a href="{{route('faq.index')}}"><i class="fa fa-circle"></i>Liste FAQ</a></li>
                         </ul>
                     </li>
                     <li><a class="sidebar-header" href=""><i data-feather="settings"></i><span>Paramètres</span></a>
