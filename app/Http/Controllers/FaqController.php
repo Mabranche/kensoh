@@ -73,7 +73,7 @@ class FaqController extends Controller
     public function edit($id)
     {
         $faq = faq::findOrFail($id);
-        return view('faq.edit');
+        return view('faq.edit', compact('faq'));
     }
 
     /**
@@ -85,7 +85,9 @@ class FaqController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $faq->update($request->all());
+
+        return redirect()->route('faq.index')->with('update_success', 'faq à bien été modifier');
     }
 
     /**

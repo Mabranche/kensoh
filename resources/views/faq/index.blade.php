@@ -64,7 +64,7 @@
                             <tr>
                                 <th>Question</th>
                                 <th>Answer</th>
-                                <th>sate</th>
+                                <th>state</th>
 
                             </tr>
                             </thead>

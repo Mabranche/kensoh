@@ -1,4 +1,4 @@
-@extends('layouts.app',)
+@extends('layouts.app')
 @section('title',__('Editer une faq'))
 
 @section('content')
